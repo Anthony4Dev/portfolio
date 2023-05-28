@@ -1,10 +1,10 @@
 function App() {
 
   return (
-      <div className="App">
+      <div id="portfolio">
         <h1>React + SASS</h1>
        </div>
   );
 }
 
-export default App
+export default App;
