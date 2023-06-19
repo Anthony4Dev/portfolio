@@ -13,6 +13,7 @@
         color: #333
         font-size: 1.3rem
         @include mixins.center
+        transition: background-color 0.3s, color 0.3s
 
     #linkedin
         color: #0072b1
@@ -25,5 +26,7 @@
 
     :hover
         background: variables.$gradient
+        
         > svg
             color: variables.$text-color
+            transition: color 0.3s ease-in-out

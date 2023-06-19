@@ -12,14 +12,14 @@ import {
 import "../style/components/technologiescontainer.sass";
 
 const technologies = [
-  { id: "html", name: "Html5", icon: <DiHtml5/> },
-  { id: "css", name: "CSS3", icon: <DiCss3 /> },
-  { id: "js", name: "JavaScript", icon: <DiJsBadge /> },
-  { id: "node", name: "Node.js", icon: <DiNodejsSmall /> },
-  { id: "mysql", name: "MySQL", icon: <DiMysql /> },
-  { id: "react", name: "React", icon: <DiReact /> },
-  { id: "php", name: "Php", icon: <DiPhp /> },
-  { id: "java", name: "Java", icon: <DiJava/> },
+  { id: "html", name: "HTML5", icon: <DiHtml5 />, description: "Marcação de conteúdo web." },
+  { id: "css", name: "CSS3", icon: <DiCss3 />, description: "Estilização avançada para páginas web." },
+  { id: "js", name: "JavaScript", icon: <DiJsBadge />, description: "Interatividade nas páginas web." },
+  { id: "node", name: "Node.js", icon: <DiNodejsSmall />, description: "Plataforma de tempo de execução JavaScript no servidor." },
+  { id: "mysql", name: "MySQL", icon: <DiMysql />, description: "Banco de dados relacional." },
+  { id: "react", name: "React", icon: <DiReact />, description: " Biblioteca JavaScript para construção de interfaces de usuário." },
+  { id: "php", name: "PHP", icon: <DiPhp />, description: "Linguagem de programação para desenvolvimento de aplicações web." },
+  { id: "java", name: "Java", icon: <DiJava />, description: "Linguagem de programação versátil para desenvolvimento de diversos tipos de aplicativos." },
 ];
 
 const TechnologiesContainer = () => {
@@ -32,7 +32,7 @@ const TechnologiesContainer = () => {
             {tech.icon}
             <div className="technology-info">
               <h3>{tech.name}</h3>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+              <p>{tech.description}</p>
             </div>
           </div>
         ))}
