@@ -1,13 +1,13 @@
-import React from 'react';
-import { AiFillPhone, AiOutlineMail, AiFillEnvironment } from 'react-icons/ai';
-import '../style/components/informationcontainer.sass';
+import React from 'react'
+import { AiFillPhone, AiOutlineMail, AiFillEnvironment } from 'react-icons/ai'
+import '../style/components/informationcontainer.sass'
 
 const InformationContainer = () => {
-  const email = 'Anthony.islan2005@gmail.com';
+  const email = 'Anthony.islan2005@gmail.com'
 
   const handleEmailClick = () => {
-    window.location.href = `mailto:${email}`;
-  };
+    window.location.href = `mailto:${email}`
+  }
 
   return (
     <section id="information">
